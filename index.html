@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>GQ Recovery Newry | Vehicle Recovery & Transport</title>
 <meta name="description" content="GQ Recovery provides professional vehicle recovery, breakdown assistance and vehicle transportation in Newry and surrounding areas. Call 07910 301692.">
 
@@ -45,7 +46,7 @@ nav{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:18px 8%;
+    padding:12px 8%;
     background:white;
     box-shadow:0 2px 12px rgba(0,0,0,.08);
     position:sticky;
@@ -56,22 +57,14 @@ nav{
 .logo img{
     height:85px;
     width:auto;
+    display:block;
 }
 
-.logo span{
-    color:var(--yellow);
-}
-
-nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:12px 8%;
-    background:white;
-    box-shadow:0 2px 12px rgba(0,0,0,.08);
-    position:sticky;
-    top:0;
-    z-index:10;
+nav a{
+    color:#222;
+    text-decoration:none;
+    margin-left:22px;
+    font-weight:bold;
 }
 
 .hero{
@@ -260,9 +253,18 @@ footer{
 }
 
 @media(max-width:800px){
+    .topbar{
+        text-align:center;
+    }
+
     nav{
         display:block;
         text-align:center;
+    }
+
+    .logo img{
+        height:75px;
+        margin:0 auto;
     }
 
     nav div:last-child{
@@ -274,17 +276,22 @@ footer{
         font-size:.9rem;
     }
 
+    .hero{
+        min-height:78vh;
+        text-align:center;
+    }
+
     .hero h1{
         font-size:2.8rem;
+    }
+
+    .buttons{
+        justify-content:center;
     }
 
     .about,
     .contact-grid{
         grid-template-columns:1fr;
-    }
-
-    .topbar{
-        text-align:center;
     }
 }
 </style>
@@ -298,8 +305,9 @@ footer{
 
 <nav>
     <div class="logo">
-    <img src="logo.jpg" alt="GQ Recovery Logo">
-</div>
+        <img src="logo.jpg" alt="GQ Recovery Logo">
+    </div>
+
     <div>
         <a href="#services">Services</a>
         <a href="#gallery">Gallery</a>
